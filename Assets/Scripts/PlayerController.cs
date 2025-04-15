@@ -7,13 +7,14 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
     public float speed;
+    private Rigidbody2D rb;
 
     public static PlayerController instance;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Awake()
@@ -46,7 +47,11 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector2.right * horizontalInput * speed * Time.deltaTime);
-        transform.Translate(Vector2.up * verticalInput * speed * Time.deltaTime);
+
+        Vector2 moveVector = new Vector2(horizontalInput, verticalInput);
+        rb.velocity = (moveVector * speed);
+
+        //transform.Translate(Vector2.right * horizontalInput * speed * Time.deltaTime);
+        //transform.Translate(Vector2.up * verticalInput * speed * Time.deltaTime);
     }
 }
