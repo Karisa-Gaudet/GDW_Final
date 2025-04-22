@@ -6,8 +6,6 @@ Which Monster do you choose?
         -> chosen ("Mowth")
     + [Gofish]
         -> chosen ("Gofish")
-    + [Broulder]
-        -> chosen ("Broulder")
         
 === chosen(Monster) ===
 You chose {Monster}!
