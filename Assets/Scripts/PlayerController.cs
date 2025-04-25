@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed;
     private Rigidbody2D rb;
+    public bool hasMonster = false;
+    public bool canHaveMonster = true;
+    public bool monsterNearby = false;
+
+    
 
     public static PlayerController instance;
 
@@ -15,30 +20,25 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        
     }
 
-    private void Awake()
-    {
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        } else
-        {
-            instance = this;
-            DontDestroyOnLoad(this);
-        }
-    }
+    
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        Movement();
+
+        if (Input.GetKeyDown(KeyCode.Space) && monsterNearby && !hasMonster && canHaveMonster)
         {
-            return;
+            //hasMonster = true;
+            //canHaveMonster = false;
         }
 
-        Movement();
+        
+
     }
 
 
@@ -54,4 +54,29 @@ public class PlayerController : MonoBehaviour
         //transform.Translate(Vector2.right * horizontalInput * speed * Time.deltaTime);
         //transform.Translate(Vector2.up * verticalInput * speed * Time.deltaTime);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("NPC"))
+        {
+            
+        }
+
+        if (collision.gameObject.CompareTag("Monster"))
+        {
+            monsterNearby = true;
+        } 
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster"))
+        {
+            monsterNearby = false;
+        }
+    }
+
+
+
+
 }
