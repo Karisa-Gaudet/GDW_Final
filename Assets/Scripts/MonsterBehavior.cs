@@ -15,6 +15,8 @@ public class MonsterBehavior : MonoBehaviour
 
     public bool isCurrentMonster;
 
+    
+
 
 
     // Start is called before the first frame update
@@ -32,30 +34,11 @@ public class MonsterBehavior : MonoBehaviour
     void FixedUpdate()
     {
         FollowPlayerMovement();
-
-        //if (playerC.hasMonster && touchingPlayer)
-        //{
-            //isCurrentMonster = true;
-            
-
-
-           // if (followPlayer == false)
-           // {
-           // followPlayer = true;
-           // }
-       // }
-
     }
 
     private void Update()
     {
-        //if (playerC.hasMonster && Input.GetKeyDown(KeyCode.Space))
-        //{
-           // playerC.hasMonster = false;
-            //isCurrentMonster = false;
-            //followPlayer = false;
-            //playerC.canHaveMonster = true;
-        //}
+        
 
         if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && Input.GetKeyDown(KeyCode.Space))
         {
@@ -63,19 +46,18 @@ public class MonsterBehavior : MonoBehaviour
             followPlayer = true;
             playerC.hasMonster = true;
             playerC.canHaveMonster = false;
+            gameObject.name = "Current Monster";
         }
         else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && Input.GetKeyDown(KeyCode.Space))
         {
             followPlayer = false;
             playerC.hasMonster = false;
             playerC.canHaveMonster = true;
+            gameObject.name = "Monster";
         }
 
 
-        if (isCurrentMonster && monsterName == "Mowth")
-        {
-            // game object tallGrass box collider2D set active = false
-        }
+        
 
 
 
@@ -100,7 +82,7 @@ public class MonsterBehavior : MonoBehaviour
 
     public void FollowPlayerMovement()
     {
-        if (followPlayer == true && isCurrentMonster) //maybe move iscurrentmonster to someplace else if it doesnt work
+        if (followPlayer == true && isCurrentMonster) 
         {
             //disable trigger so that you cant hit it again
 
@@ -109,12 +91,13 @@ public class MonsterBehavior : MonoBehaviour
             //move towards the player
 
 
-            if (touchingPlayer == false)
+            if (!touchingPlayer)
             {
                 speed = 6;
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
+                
             }
-            else if (touchingPlayer == true)
+            else if (touchingPlayer)
             {
                 speed = 0;
             }

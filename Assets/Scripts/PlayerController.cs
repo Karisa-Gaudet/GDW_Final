@@ -11,10 +11,9 @@ public class PlayerController : MonoBehaviour
     public bool hasMonster = false;
     public bool canHaveMonster = true;
     public bool monsterNearby = false;
+    public bool npcNearby = false;
 
-    
-
-    public static PlayerController instance;
+    //public static PlayerController instance;
 
     // Start is called before the first frame update
     void Start()
@@ -57,10 +56,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("NPC"))
-        {
-            
-        }
 
         if (collision.gameObject.CompareTag("Monster"))
         {
@@ -74,6 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             monsterNearby = false;
         }
+        
     }
 
 
