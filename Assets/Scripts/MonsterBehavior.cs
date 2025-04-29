@@ -6,7 +6,6 @@ public class MonsterBehavior : MonoBehaviour
 {
     public string monsterName;
     public bool followPlayer;
-    public GameObject player;
     private PlayerController playerC;
     public GameObject trigger;
 
@@ -16,12 +15,15 @@ public class MonsterBehavior : MonoBehaviour
 
     public bool isCurrentMonster;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         playerC = GameObject.Find("Player").GetComponent<PlayerController>();
 
         target = GameObject.Find("Player").GetComponent<Transform>();
+
 
 
     }
@@ -69,6 +71,14 @@ public class MonsterBehavior : MonoBehaviour
             playerC.canHaveMonster = true;
         }
 
+
+        if (isCurrentMonster && monsterName == "Mowth")
+        {
+            // game object tallGrass box collider2D set active = false
+        }
+
+
+
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -77,6 +87,7 @@ public class MonsterBehavior : MonoBehaviour
         {
             touchingPlayer = true;
         }
+
     }
 
     public void OnCollisionExit2D(Collision2D collision)
