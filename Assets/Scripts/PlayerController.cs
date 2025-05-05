@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,14 +14,17 @@ public class PlayerController : MonoBehaviour
     public bool monsterNearby = false;
     public bool npcNearby = false;
 
-    //public static PlayerController instance;
+
+    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
         
+
     }
 
     
@@ -30,13 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
 
-        if (Input.GetKeyDown(KeyCode.Space) && monsterNearby && !hasMonster && canHaveMonster)
-        {
-            //hasMonster = true;
-            //canHaveMonster = false;
-        }
-
-        
+       
 
     }
 
@@ -61,6 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             monsterNearby = true;
         } 
+
     }
 
     public void OnTriggerExit2D(Collider2D collision)
@@ -72,7 +71,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
+    
 
 
 }

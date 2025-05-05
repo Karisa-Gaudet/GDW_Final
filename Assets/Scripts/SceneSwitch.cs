@@ -6,30 +6,24 @@ public class SceneSwitch : MonoBehaviour
 {
     public GameObject player;
     public Transform Target;
-    public GameObject monster;
     private PlayerController playerC;
-    private MonsterBehavior monsterB;
+    public BoxCollider2D boxCollider;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        monsterB = GameObject.Find("Monster").GetComponent<MonsterBehavior>();
+        
         playerC = GameObject.Find("Player").GetComponent<PlayerController>();
+
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !playerC.hasMonster)
         {
             player.transform.position = Target.position;
         }
-        
-        if (playerC.hasMonster && monsterB.followPlayer)
-        {
-            //monster.transform.position = Target.position;
-        }
-
-
     }
 
 

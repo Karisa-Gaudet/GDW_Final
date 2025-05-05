@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,8 @@ public class TerrainObstacle : MonoBehaviour
 {
     private PlayerController playerC;
     private MonsterBehavior monsterB;
-    public string monsterRequired;
+    public string[] monsterRequired;
+    
     public BoxCollider2D boxCollider;
 
     // Start is called before the first frame update
@@ -14,15 +16,17 @@ public class TerrainObstacle : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         playerC = GameObject.Find("Player").GetComponent<PlayerController>();
-        monsterB = GameObject.Find("Monster").GetComponent<MonsterBehavior>();
-
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerC.hasMonster && monsterB.monsterName == monsterRequired && monsterB.followPlayer)
+        monsterB = GameObject.Find("Current Monster").GetComponent<MonsterBehavior>();
+
+        bool containsMonster = Array.Exists(monsterRequired, monster => monster == monsterB.monsterName);
+        
+        if (playerC.hasMonster && containsMonster && monsterB.followPlayer)
         {
             boxCollider.enabled = false;
         }
@@ -32,5 +36,7 @@ public class TerrainObstacle : MonoBehaviour
         }
 
     }
+
+
 
 }
