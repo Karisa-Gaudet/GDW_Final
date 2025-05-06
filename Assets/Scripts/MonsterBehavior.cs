@@ -18,7 +18,9 @@ public class MonsterBehavior : MonoBehaviour
 
     public Rigidbody2D playerRb;
 
-    public BoxCollider2D boxCol;
+    //public BoxCollider2D boxCol;
+
+    public SpriteRenderer sprite;
 
 
 
@@ -31,7 +33,9 @@ public class MonsterBehavior : MonoBehaviour
 
         playerRb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
 
-        boxCol = GetComponent<BoxCollider2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+
+        //boxCol = GetComponent<BoxCollider2D>();
 
     }
 
@@ -52,7 +56,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = true;
             playerC.canHaveMonster = false;
             gameObject.name = "Current Monster";
-            boxCol.enabled = false;
+            //boxCol.enabled = false;
         }
         else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
@@ -60,7 +64,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = false;
             playerC.canHaveMonster = true;
             gameObject.name = "Monster";
-            boxCol.enabled=true;
+            //boxCol.enabled=true;
         }
 
 
@@ -91,7 +95,20 @@ public class MonsterBehavior : MonoBehaviour
     {
         if (followPlayer == true && isCurrentMonster) 
         {
+            //flip the sprite
+
+            if (playerC.horizontalInput < 0)
+            {
+                sprite.flipX = true;
+            }
+            if (playerC.horizontalInput > 0)
+            {
+                sprite.flipX = false;
+            }
+
             
+
+
             if (!touchingPlayer)
             {
                 speed = followSpeed;

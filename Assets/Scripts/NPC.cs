@@ -12,7 +12,7 @@ public class NPC : MonoBehaviour
     public bool dialogueShowing;
     private PlayerController playerC;
     private int paused = 0;
-    private int resumed = 7;
+    private int resumed = 5;
 
 
     // Start is called before the first frame update

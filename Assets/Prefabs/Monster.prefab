@@ -128,7 +128,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253659645063138494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -212,6 +212,7 @@ MonoBehaviour:
   touchingPlayer: 0
   isCurrentMonster: 0
   playerRb: {fileID: 0}
+  boxCol: {fileID: 0}
 --- !u!1 &5855737636592834381
 GameObject:
   m_ObjectHideFlags: 0
