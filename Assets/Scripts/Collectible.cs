@@ -11,7 +11,7 @@ public class Collectible : MonoBehaviour
     
 
     
-    private GameManager gameManager;
+    //private GameManager gameManager;
 
 
     //public string collectibleName;
@@ -26,7 +26,7 @@ public class Collectible : MonoBehaviour
 
         //collectibleText = "You got a " + collectibleName + "!";
 
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

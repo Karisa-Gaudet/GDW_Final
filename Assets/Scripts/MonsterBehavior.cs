@@ -11,7 +11,7 @@ public class MonsterBehavior : MonoBehaviour
 
     private Transform target;
     public float speed;
-    private float followSpeed = 4.0f;
+    private float followSpeed = 4.5f;
     public bool touchingPlayer;
 
     public bool isCurrentMonster;

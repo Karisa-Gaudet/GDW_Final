@@ -634,11 +634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.size
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.data[0]
-      value: 66
+      value: Broulder
       objectReference: {fileID: 0}
     - target: {fileID: 8978444062312195709, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: m_Size.x
@@ -1124,9 +1124,9 @@ PolygonCollider2D:
       - {x: -5.3144627, y: 5.817403}
       - {x: -5.2742977, y: 4.137607}
       - {x: -3.860345, y: 4.1424265}
-      - {x: -1.8011006, y: 3.2352219}
-      - {x: 0.49683833, y: 3.231099}
-      - {x: 0.5140971, y: 1.7498657}
+      - {x: -1.8011006, y: 3.310734}
+      - {x: 1.7506298, y: 3.268855}
+      - {x: 1.6991876, y: 1.7121093}
   m_UseDelaunayMesh: 0
 --- !u!1 &810791400
 GameObject:
@@ -2466,6 +2466,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1135025201567503866, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
+      propertyPath: speed
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135025201567503866, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: monsterName
       value: Gofish
       objectReference: {fileID: 0}
@@ -2810,11 +2814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.data[0]
-      value: 71
+      value: Gofish
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.data[1]
@@ -3632,11 +3636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.size
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8711500536009457257, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: monsterRequired.Array.data[0]
-      value: 77
+      value: Mowth
       objectReference: {fileID: 0}
     - target: {fileID: 8978444062312195709, guid: 4e4ca8b58471f5e46b5dfe96fb74f8fd, type: 3}
       propertyPath: m_Size.x

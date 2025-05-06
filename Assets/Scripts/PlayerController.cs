@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
         
 
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     
