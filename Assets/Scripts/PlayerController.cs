@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
 
     public GameManager gameManager;
 
+    public string location;
+
     // Start is called before the first frame update
     void Start()
     {

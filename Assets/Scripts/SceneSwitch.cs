@@ -16,6 +16,8 @@ public class SceneSwitch : MonoBehaviour
 
     public bool displayMessage;
 
+    public string location;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -32,6 +34,8 @@ public class SceneSwitch : MonoBehaviour
         if (other.tag == "Player" && !playerC.hasMonster)
         {
             player.transform.position = Target.position;
+            playerC.location = location;
+
         }
 
         if (other.tag == "Player" && playerC.hasMonster)

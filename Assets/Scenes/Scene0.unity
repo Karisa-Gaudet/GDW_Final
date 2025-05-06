@@ -1382,11 +1382,10 @@ Transform:
   m_GameObject: {fileID: 810791400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -4.42, z: 0}
+  m_LocalPosition: {x: 0.19, y: -1.39, z: 0}
   m_LocalScale: {x: 0.2625, y: 0.2625, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2029171381}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &810791405
@@ -1418,6 +1417,7 @@ MonoBehaviour:
   collected: 0
   touchingSwitch: 0
   gameManager: {fileID: 0}
+  location: Outside
 --- !u!1 &812986399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1463,7 @@ GameObject:
   - component: {fileID: 818802418}
   - component: {fileID: 818802417}
   m_Layer: 0
-  m_Name: House Exterior
+  m_Name: Red House Exterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1610,6 +1610,10 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 2084597029}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: location
+      value: Outside
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1282179
@@ -1897,6 +1901,10 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1777546624}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: location
+      value: Outside
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1282179
@@ -2096,7 +2104,7 @@ GameObject:
   - component: {fileID: 967068335}
   - component: {fileID: 967068334}
   m_Layer: 0
-  m_Name: House Exterior
+  m_Name: Lab Exterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2280,6 +2288,10 @@ PrefabInstance:
       propertyPath: textUI
       value: 
       objectReference: {fileID: 1378495055}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: location
+      value: Lab
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33518338
@@ -3084,7 +3096,7 @@ GameObject:
   - component: {fileID: 1543220519}
   - component: {fileID: 1543220520}
   m_Layer: 0
-  m_Name: House Interior
+  m_Name: Lab Interior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4061,6 +4073,10 @@ PrefabInstance:
       propertyPath: textUI
       value: 
       objectReference: {fileID: 1378495055}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: location
+      value: Red House
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33518338
@@ -4128,7 +4144,7 @@ GameObject:
   - component: {fileID: 1931053534}
   - component: {fileID: 1931053535}
   m_Layer: 0
-  m_Name: House Interior
+  m_Name: Red House Interior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4223,6 +4239,7 @@ GameObject:
   - component: {fileID: 2029171381}
   - component: {fileID: 2029171380}
   - component: {fileID: 2029171379}
+  - component: {fileID: 2029171382}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4298,12 +4315,34 @@ Transform:
   m_GameObject: {fileID: 2029171378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.17, y: -0.78, z: -1}
+  m_LocalScale: {x: 0.2625, y: 0.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 810791404}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029171382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029171378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9aa84876536304cbe9b58244513980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerC: {fileID: 0}
+  player: {fileID: 0}
+  playerTransform: {fileID: 0}
+  xRangePos: 8.45
+  xRangeNeg: -7.97
+  yRangePos: 8.7
+  yRangeNeg: -4.2
+  zPos: -1
+  lab: {fileID: 1543220519}
+  redHouse: {fileID: 1931053534}
 --- !u!1 &2084597028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,7 +4368,7 @@ Transform:
   m_GameObject: {fileID: 2084597028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -3.63, z: 0.31282732}
+  m_LocalPosition: {x: -4, y: -4.4, z: 0.31282732}
   m_LocalScale: {x: 0.7630674, y: 0.7622596, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4837,6 +4876,7 @@ SceneRoots:
   - {fileID: 673368686}
   - {fileID: 1789147961}
   - {fileID: 1680931057}
+  - {fileID: 2029171381}
   - {fileID: 810791404}
   - {fileID: 6681716279848146460}
   - {fileID: 182614260}
