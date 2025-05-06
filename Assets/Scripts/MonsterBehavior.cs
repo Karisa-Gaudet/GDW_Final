@@ -18,6 +18,8 @@ public class MonsterBehavior : MonoBehaviour
 
     public Rigidbody2D playerRb;
 
+    public BoxCollider2D boxCol;
+
 
 
     // Start is called before the first frame update
@@ -28,6 +30,8 @@ public class MonsterBehavior : MonoBehaviour
         target = GameObject.Find("Player").GetComponent<Transform>();
 
         playerRb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+
+        boxCol = GetComponent<BoxCollider2D>();
 
     }
 
@@ -48,7 +52,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = true;
             playerC.canHaveMonster = false;
             gameObject.name = "Current Monster";
-            GetComponent<BoxCollider2D>().enabled = false;
+            boxCol.enabled = false;
         }
         else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
@@ -56,7 +60,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = false;
             playerC.canHaveMonster = true;
             gameObject.name = "Monster";
-            GetComponent<BoxCollider2D>().enabled=true;
+            boxCol.enabled=true;
         }
 
 
