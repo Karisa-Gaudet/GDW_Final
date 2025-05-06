@@ -11,6 +11,8 @@ public class TerrainObstacle : MonoBehaviour
     
     public BoxCollider2D boxCollider;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {

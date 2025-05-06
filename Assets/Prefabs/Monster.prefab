@@ -207,11 +207,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterName: 
   followPlayer: 0
-  player: {fileID: 0}
   trigger: {fileID: 6105612662087979362}
-  speed: 7
+  speed: 4
   touchingPlayer: 0
   isCurrentMonster: 0
+  playerRb: {fileID: 0}
 --- !u!1 &5855737636592834381
 GameObject:
   m_ObjectHideFlags: 0

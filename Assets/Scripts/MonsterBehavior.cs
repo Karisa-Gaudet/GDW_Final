@@ -11,11 +11,12 @@ public class MonsterBehavior : MonoBehaviour
 
     private Transform target;
     public float speed;
+    private float followSpeed = 4.0f;
     public bool touchingPlayer;
 
     public bool isCurrentMonster;
 
-    
+    public Rigidbody2D playerRb;
 
 
 
@@ -26,7 +27,7 @@ public class MonsterBehavior : MonoBehaviour
 
         target = GameObject.Find("Player").GetComponent<Transform>();
 
-
+        playerRb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
 
     }
 
@@ -40,20 +41,22 @@ public class MonsterBehavior : MonoBehaviour
     {
         
 
-        if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && Input.GetKeyDown(KeyCode.Space))
+        if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
             isCurrentMonster = true;
             followPlayer = true;
             playerC.hasMonster = true;
             playerC.canHaveMonster = false;
             gameObject.name = "Current Monster";
+            GetComponent<BoxCollider2D>().enabled = false;
         }
-        else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && Input.GetKeyDown(KeyCode.Space))
+        else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
             followPlayer = false;
             playerC.hasMonster = false;
             playerC.canHaveMonster = true;
             gameObject.name = "Monster";
+            GetComponent<BoxCollider2D>().enabled=true;
         }
 
 
@@ -63,7 +66,7 @@ public class MonsterBehavior : MonoBehaviour
 
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -72,7 +75,7 @@ public class MonsterBehavior : MonoBehaviour
 
     }
 
-    public void OnCollisionExit2D(Collision2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -84,16 +87,10 @@ public class MonsterBehavior : MonoBehaviour
     {
         if (followPlayer == true && isCurrentMonster) 
         {
-            //disable trigger so that you cant hit it again
-
-            trigger.SetActive(false);
-
-            //move towards the player
-
-
+            
             if (!touchingPlayer)
             {
-                speed = 6;
+                speed = followSpeed;
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
                 
             }
@@ -102,10 +99,7 @@ public class MonsterBehavior : MonoBehaviour
                 speed = 0;
             }
         }
-        else
-        {
-            trigger.SetActive(true);
-        }
+        
     }
 
 }

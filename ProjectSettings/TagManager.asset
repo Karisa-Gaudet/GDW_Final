@@ -8,6 +8,8 @@ TagManager:
   - NPC
   - Monster
   - Collectible
+  - Egg
+  - Switch
   layers:
   - Default
   - TransparentFX

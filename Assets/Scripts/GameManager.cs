@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    public int collectiblesFound = 0;
+    public int collectibleScore = 0;
     public TextMeshProUGUI collectiblesFoundText;
     public TextMeshProUGUI endGameText;
     private PlayerController playerC;
+    
 
 
     // Start is called before the first frame update
@@ -17,12 +17,22 @@ public class GameManager : MonoBehaviour
     {
         playerC = GameObject.Find("Player").GetComponent<PlayerController>();
         
+        
+
+        Score(collectibleScore);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (collectiblesFound == 100)
+
+        if (playerC.collected)
+        {
+            Score(1);
+            playerC.collected = false;
+        }
+
+        if (collectibleScore == 100)
         {
             GameOver();
         }
@@ -40,7 +50,13 @@ public class GameManager : MonoBehaviour
         playerC.speed = 0;
     }
 
-
+   public void Score(int score)
+    {
+        
+            collectibleScore += score;
+            collectiblesFoundText.text = "Found: " + collectibleScore;
+ 
+    }
 
 
 
