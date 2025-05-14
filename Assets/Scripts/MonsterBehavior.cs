@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MonsterBehavior : MonoBehaviour
 {
@@ -18,9 +19,9 @@ public class MonsterBehavior : MonoBehaviour
 
     public Rigidbody2D playerRb;
 
-    //public BoxCollider2D boxCol;
-
     public SpriteRenderer sprite;
+
+    
 
 
 
@@ -35,7 +36,6 @@ public class MonsterBehavior : MonoBehaviour
 
         sprite = GetComponentInChildren<SpriteRenderer>();
 
-        //boxCol = GetComponent<BoxCollider2D>();
 
     }
 
@@ -48,6 +48,7 @@ public class MonsterBehavior : MonoBehaviour
     private void Update()
     {
         
+        
 
         if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
@@ -56,7 +57,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = true;
             playerC.canHaveMonster = false;
             gameObject.name = "Current Monster";
-            //boxCol.enabled = false;
+            
         }
         else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
         {
@@ -64,7 +65,7 @@ public class MonsterBehavior : MonoBehaviour
             playerC.hasMonster = false;
             playerC.canHaveMonster = true;
             gameObject.name = "Monster";
-            //boxCol.enabled=true;
+            
         }
 
 
@@ -93,7 +94,10 @@ public class MonsterBehavior : MonoBehaviour
 
     public void FollowPlayerMovement()
     {
-        if (followPlayer == true && isCurrentMonster) 
+
+        float distance = Vector3.Distance(target.position, transform.position);
+
+        if (followPlayer && isCurrentMonster) 
         {
             //flip the sprite
 
@@ -106,7 +110,10 @@ public class MonsterBehavior : MonoBehaviour
                 sprite.flipX = false;
             }
 
-            
+            if (distance > 10)
+            {
+                transform.position = target.position; 
+            }
 
 
             if (!touchingPlayer)

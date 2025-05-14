@@ -16,6 +16,7 @@ public class CameraScript : MonoBehaviour
 
     public Transform lab;
     public Transform redHouse;
+    public Transform forest;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,29 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (playerC.location == "Forest")
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);
+
+            if (transform.position.x < 3.5f)
+            {
+                transform.position = new Vector3(3.5f, transform.position.y, zPos);
+            }
+            if (transform.position.x > 19.6f)
+            {
+                transform.position = new Vector3(19.6f, transform.position.y, zPos);
+            }
+            if (transform.position.y < 34.7f)
+            {
+                transform.position = new Vector3(transform.position.x, 34.7f, zPos);
+            }
+            if (transform.position.y > 47.8f)
+            {
+                transform.position = new Vector3(transform.position.x, 47.8f, zPos);
+            }
+
+
+        }
 
         if (playerC.location == "Lab")
         {
@@ -41,7 +64,7 @@ public class CameraScript : MonoBehaviour
             transform.position = new Vector3 (redHouse.position.x, redHouse.position.y, zPos);
         }
 
-        if (playerC.location == "Outside")
+        if (playerC.location == "Town")
         {
             transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);
 

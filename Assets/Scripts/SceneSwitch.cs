@@ -31,19 +31,25 @@ public class SceneSwitch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player" && !playerC.hasMonster)
+        /*if (other.tag == "Player" && !playerC.hasMonster)
         {
             player.transform.position = Target.position;
             playerC.location = location;
 
-        }
+        }*/
 
-        if (other.tag == "Player" && playerC.hasMonster)
+        if (other.tag == "Player" && playerC.hasMonster && entryMessage != "")
         {
             panel.gameObject.SetActive(true);
             textUI.gameObject.SetActive(true);
             textUI.text = entryMessage;
             displayMessage = true;
+        }
+        else if (other.tag == "Player" && playerC.hasMonster && entryMessage == "")
+        {
+            player.transform.position = Target.position;
+            playerC.location = location;
+            displayMessage = false;
         }
 
     }
