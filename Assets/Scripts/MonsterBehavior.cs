@@ -68,7 +68,7 @@ public class MonsterBehavior : MonoBehaviour
             
         }
 
-
+        
         
 
 
@@ -115,6 +115,7 @@ public class MonsterBehavior : MonoBehaviour
                 transform.position = target.position; 
             }
 
+            
 
             if (!touchingPlayer)
             {
@@ -127,6 +128,8 @@ public class MonsterBehavior : MonoBehaviour
                 speed = 0;
             }
         }
+
+
         
     }
 

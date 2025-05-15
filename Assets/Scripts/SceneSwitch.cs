@@ -25,20 +25,22 @@ public class SceneSwitch : MonoBehaviour
         playerC = GameObject.Find("Player").GetComponent<PlayerController>();
 
         boxCollider = GetComponent<BoxCollider2D>();
+
+        
     }
 
    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*if (other.tag == "Player" && !playerC.hasMonster)
+        if (other.tag == "Player" && !playerC.hasMonster)
         {
             player.transform.position = Target.position;
             playerC.location = location;
 
-        }*/
+        }
 
-        if (other.tag == "Player" && playerC.hasMonster && entryMessage != "")
+        if (other.tag == "Player" && playerC.hasMonster && entryMessage == "Monsters can't go indoors!")
         {
             panel.gameObject.SetActive(true);
             textUI.gameObject.SetActive(true);

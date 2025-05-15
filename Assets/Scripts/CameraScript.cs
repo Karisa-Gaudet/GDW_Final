@@ -16,7 +16,8 @@ public class CameraScript : MonoBehaviour
 
     public Transform lab;
     public Transform redHouse;
-    public Transform forest;
+    public Transform purpleHouse;
+    public Transform pinkHouse;
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +51,49 @@ public class CameraScript : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x, 47.8f, zPos);
             }
+        }
+        if (playerC.location == "Pond")
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);
 
+            if (transform.position.x < 36.5f)
+            {
+                transform.position = new Vector3(36.5f, transform.position.y, zPos);
+            }
+            if (transform.position.x > 52.7f)
+            {
+                transform.position = new Vector3(52.7f, transform.position.y, zPos);
+            }
+            if (transform.position.y < -22.2f)
+            {
+                transform.position = new Vector3(transform.position.x, -22.2f, zPos);
+            }
+            if (transform.position.y > -9.7f)
+            {
+                transform.position = new Vector3(transform.position.x, -9.7f, zPos);
+            }
+        }
 
+        if (playerC.location == "Cliffs")
+        {
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);
+
+            if (transform.position.x < -58.4f)
+            {
+                transform.position = new Vector3(-58.4f, transform.position.y, zPos);
+            }
+            if (transform.position.x > -52.8f)
+            {
+                transform.position = new Vector3(-52.8f, transform.position.y, zPos);
+            }
+            if (transform.position.y < 6.7f)
+            {
+                transform.position = new Vector3(transform.position.x, 6.7f, zPos);
+            }
+            if (transform.position.y > 31.1f)
+            {
+                transform.position = new Vector3(transform.position.x, 31.1f, zPos);
+            }
         }
 
         if (playerC.location == "Lab")
@@ -62,6 +104,11 @@ public class CameraScript : MonoBehaviour
         if (playerC.location == "Red House")
         {
             transform.position = new Vector3 (redHouse.position.x, redHouse.position.y, zPos);
+        }
+
+        if (playerC.location == "Purple House")
+        {
+            transform.position = new Vector3 (purpleHouse.position.x, purpleHouse.position.y, zPos);
         }
 
         if (playerC.location == "Town")
