@@ -111,6 +111,11 @@ public class CameraScript : MonoBehaviour
             transform.position = new Vector3 (purpleHouse.position.x, purpleHouse.position.y, zPos);
         }
 
+        if (playerC.location == "Pink House")
+        {
+            transform.position = new Vector3 (pinkHouse.position.x, pinkHouse.position.y, zPos);
+        }
+
         if (playerC.location == "Town")
         {
             transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);

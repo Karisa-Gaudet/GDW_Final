@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
             playerC.collected = false;
         }
 
-        if (collectibleScore == 100)
+        if (collectibleScore == 10)
         {
             GameOver();
         }
