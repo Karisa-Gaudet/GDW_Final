@@ -1156,11 +1156,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.08
+      value: 12.23
       objectReference: {fileID: 0}
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.72
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3065,7 +3065,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.39220023, y: -0.07001698}
+  m_Offset: {x: -2.373776, y: -1.0277787}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5162734, y: 0.08584388}
@@ -3076,7 +3076,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.04804, y: 1.4930849}
+  m_Size: {x: 5.312249, y: 1.8233483}
   m_EdgeRadius: 0
 --- !u!212 &810791403
 SpriteRenderer:
@@ -3139,7 +3139,7 @@ Transform:
   m_GameObject: {fileID: 810791400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.38, y: -1.07, z: 0}
+  m_LocalPosition: {x: 0.97, y: -0.71, z: 0}
   m_LocalScale: {x: 0.2625, y: 0.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3546,11 +3546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8239820160452307814, guid: 5586c7b31468b184f818c5a395ef2c8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.6067557
+      value: -7.84
       objectReference: {fileID: 0}
     - target: {fileID: 8239820160452307814, guid: 5586c7b31468b184f818c5a395ef2c8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.688849
+      value: -7.04
       objectReference: {fileID: 0}
     - target: {fileID: 8239820160452307814, guid: 5586c7b31468b184f818c5a395ef2c8d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4571,7 +4571,7 @@ Transform:
   m_GameObject: {fileID: 1073322837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 0.116, z: 0}
+  m_LocalPosition: {x: -2.3, y: -0.8, z: 0}
   m_LocalScale: {x: 0.7228422, y: 0.68847233, z: 0.9473}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6178,11 +6178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.6
+      value: 10.51
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.47
+      value: 6.24
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6266,11 +6266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8329399739848720547, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2833
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8329399739848720547, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.713
+      value: -0.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7215,11 +7215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.16878724
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0780652
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7629,11 +7629,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.7
+      value: -8.82
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.87
+      value: 7.22
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8895,7 +8895,7 @@ Transform:
   m_GameObject: {fileID: 2029171378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.3, z: -1}
+  m_LocalPosition: {x: 0.5, y: 2.27, z: -1}
   m_LocalScale: {x: 0.2625, y: 0.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9635,11 +9635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.2
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.49
+      value: -7.8
       objectReference: {fileID: 0}
     - target: {fileID: 5429101684401068618, guid: a2a4f8f6b17c8094aaa5f807535af929, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9948,7 +9948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7816030963922727728, guid: 5586c7b31468b184f818c5a395ef2c8d, type: 3}
       propertyPath: dialogue
-      value: Isn't it so cute how Monsters will follow you around?
+      value: Isn't it so cute how Monsters will follow you around if you press space?
       objectReference: {fileID: 0}
     - target: {fileID: 7816030963922727728, guid: 5586c7b31468b184f818c5a395ef2c8d, type: 3}
       propertyPath: dialoguePanel
