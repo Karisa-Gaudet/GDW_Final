@@ -97,36 +97,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_3119_0
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 2268
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c16625187de94142a8d3649e59f7caf
-      internalID: -1332285679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_3119_1
       rect:
         serializedVersion: 2
-        x: 759
-        y: 1190
-        width: 2719
-        height: 1585
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1977
+        y: 2067
+        width: 415
+        height: 460
+      alignment: 9
+      pivot: {x: 0.4702131, y: 0.058081586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,8 +125,8 @@ TextureImporter:
         y: 1863
         width: 370
         height: 463
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.520232, y: 0.05376446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +147,7 @@ TextureImporter:
         width: 480
         height: 342
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,48 +160,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_3119_4
-      rect:
-        serializedVersion: 2
-        x: 752
-        y: 1676
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3575e08370b4a194199ab3f4c23de882
-      internalID: 676038721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_3119_5
-      rect:
-        serializedVersion: 2
-        x: 3480
-        y: 1312
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 560ded9118ae8f641809cef50d1684e5
-      internalID: 598996989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IMG_3119_6
       rect:
         serializedVersion: 2
@@ -230,8 +167,8 @@ TextureImporter:
         y: 621
         width: 713
         height: 658
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5163158, y: 0.22007431}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,9 +187,9 @@ TextureImporter:
         x: 771
         y: 64
         width: 2327
-        height: 709
+        height: 500
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,8 +209,8 @@ TextureImporter:
         y: 771
         width: 310
         height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5240746, y: 0.37561238}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +231,7 @@ TextureImporter:
         width: 487
         height: 372
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,48 +239,6 @@ TextureImporter:
       bones: []
       spriteID: 16031f75d9205c24e80b2fdf4cc13a78
       internalID: 803422818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_3119_10
-      rect:
-        serializedVersion: 2
-        x: 548
-        y: 297
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8eb2405e9f45104f82d8424fa917977
-      internalID: 1525982324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_3119_11
-      rect:
-        serializedVersion: 2
-        x: 3107
-        y: 297
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11606dc92d0172542b9151ca76920114
-      internalID: 1686209114
       vertices: []
       indices: 
       edges: []
@@ -357,7 +252,7 @@ TextureImporter:
         width: 653
         height: 674
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +273,7 @@ TextureImporter:
         width: 4
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
