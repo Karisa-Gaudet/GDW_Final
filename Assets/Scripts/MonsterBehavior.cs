@@ -50,7 +50,7 @@ public class MonsterBehavior : MonoBehaviour
         
         
 
-        if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
+        if (!playerC.hasMonster && playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.E))
         {
             isCurrentMonster = true;
             followPlayer = true;
@@ -59,7 +59,7 @@ public class MonsterBehavior : MonoBehaviour
             gameObject.name = "Current Monster";
             
         }
-        else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.Space))
+        else if (playerC.hasMonster && !playerC.canHaveMonster && touchingPlayer && !playerC.touchingSwitch && Input.GetKeyDown(KeyCode.E))
         {
             followPlayer = false;
             playerC.hasMonster = false;

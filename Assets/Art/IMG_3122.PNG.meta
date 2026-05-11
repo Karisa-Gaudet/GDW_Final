@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,9 +93,148 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IMG_3122_0
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 2958
+        width: 173
+        height: 232
+      alignment: 9
+      pivot: {x: 0.59046894, y: 0.07273812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69f5f7cddebf1645b7da0f0aaf43c20
+      internalID: -1420204398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3122_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1808
+        width: 313
+        height: 166
+      alignment: 9
+      pivot: {x: 0.50476915, y: 0.23921737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5820093e2916d314498e6067adcc2af9
+      internalID: -1506898915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3122_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1046
+        width: 203
+        height: 252
+      alignment: 9
+      pivot: {x: 0.60605425, y: 0.12030029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f34b172dec754488ed3b41af4b85f1
+      internalID: -580244526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3122_4
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 928
+        width: 319
+        height: 130
+      alignment: 9
+      pivot: {x: 0.48500258, y: 0.26078913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4778bd38df8c274a81e02f21d6b8fa5
+      internalID: -10119049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3122_5
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 450
+        width: 200
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5239212, y: 0.1833965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4656a36d3f23734d922579701b5662b
+      internalID: 2045282671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3122_6
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 202
+        width: 199
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.1879843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaa3fcdf39cd9344afd4f7556789db1
+      internalID: -1487504297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +245,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IMG_3122_0: -1420204398
+      IMG_3122_1: -1506898915
+      IMG_3122_2: -580244526
+      IMG_3122_3: 1109537124
+      IMG_3122_4: -10119049
+      IMG_3122_5: 2045282671
+      IMG_3122_6: -1487504297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
