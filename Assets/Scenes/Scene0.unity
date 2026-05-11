@@ -3203,7 +3203,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1001 &539831358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4887,7 +4887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2256658039049085147, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_SpriteSortPoint
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4161949087437129236, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
       propertyPath: m_Size.y
@@ -6218,6 +6218,10 @@ PrefabInstance:
     - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: location
       value: Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: entryMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
@@ -12862,6 +12866,10 @@ PrefabInstance:
       propertyPath: location
       value: Town
       objectReference: {fileID: 0}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: entryMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1282179
@@ -13108,6 +13116,10 @@ PrefabInstance:
       propertyPath: location
       value: Purple House
       objectReference: {fileID: 0}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: entryMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33518338
@@ -13232,6 +13244,10 @@ PrefabInstance:
     - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: location
       value: Red House
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366090291654282666, guid: 90fdedac32e65274783550891a453ac0, type: 3}
+      propertyPath: entryMessage
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4162444594817478307, guid: 90fdedac32e65274783550891a453ac0, type: 3}
       propertyPath: m_LocalScale.x
@@ -14126,14 +14142,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.11489836, y: 0.22919899}
-      - {x: -1.2114784, y: 0.123718224}
-      - {x: -1.4642644, y: -0.3823203}
-      - {x: -0.8022609, y: -1.2381219}
-      - {x: -0.0006653005, y: -1.3159032}
-      - {x: 0.90208656, y: -1.1655792}
-      - {x: 1.4456882, y: -0.37196276}
-      - {x: 1.2651095, y: 0.15008724}
+    - - {x: 0.7113809, y: 0.83880365}
+      - {x: -0.46679556, y: 0.8724019}
+      - {x: -1.161206, y: 0.54093087}
+      - {x: -1.4139967, y: 0.01750955}
+      - {x: -0.7017162, y: -0.76875615}
+      - {x: -0.084454045, y: -0.75961894}
+      - {x: 0.83505833, y: -0.5223739}
+      - {x: 1.1943312, y: -0.16335526}
+      - {x: 1.3153774, y: 0.254391}
   m_UseDelaunayMesh: 0
 --- !u!1 &2084597028
 GameObject:
