@@ -294,7 +294,7 @@ Transform:
   m_GameObject: {fileID: 40024554}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13384812, y: 1.98, z: 0}
+  m_LocalPosition: {x: 0.13384812, y: 5.79, z: 0}
   m_LocalScale: {x: 1.0084573, y: 1.014286, z: 0.8393}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -351,7 +351,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &83719804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1262483973952245368, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
@@ -2312,7 +2312,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1024490662}
-  - {fileID: 513718600}
   m_Father: {fileID: 1322889681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &458603157
@@ -2357,9 +2356,9 @@ EdgeCollider2D:
   - {x: 11.283693, y: -12.105279}
   - {x: 12.0007105, y: -11.2373}
   - {x: 13.184188, y: -10.513987}
-  - {x: 14.378128, y: -10.491689}
-  - {x: 15.518125, y: -11.004352}
-  - {x: 16.28201, y: -11.862674}
+  - {x: 14.35766, y: -10.581096}
+  - {x: 15.518125, y: -11.160813}
+  - {x: 16.241074, y: -11.92973}
   - {x: 16.507122, y: -12.18004}
   - {x: 16.475952, y: -12.791077}
   - {x: 15.893407, y: -12.886467}
@@ -2420,12 +2419,19 @@ EdgeCollider2D:
   - {x: -1.110174, y: -0.034056902}
   - {x: 8.713099, y: -0.034987688}
   - {x: 8.7594185, y: -6.320454}
-  - {x: 11.811821, y: -6.3422403}
-  - {x: 11.844092, y: -8.426187}
-  - {x: 12.675457, y: -7.892643}
-  - {x: 13.767309, y: -7.5907965}
-  - {x: 15.02863, y: -7.907267}
-  - {x: 15.940657, y: -8.522927}
+  - {x: 11.689012, y: -6.4987025}
+  - {x: 11.801304, y: -8.445659}
+  - {x: 11.086772, y: -9.588481}
+  - {x: 11.1643715, y: -10.052657}
+  - {x: 11.372906, y: -10.068758}
+  - {x: 12.061414, y: -9.032586}
+  - {x: 13.460285, y: -8.350758}
+  - {x: 14.864884, y: -8.533117}
+  - {x: 15.673506, y: -9.189841}
+  - {x: 16.33423, y: -10.135016}
+  - {x: 16.541363, y: -10.199135}
+  - {x: 16.562162, y: -9.451906}
+  - {x: 15.961126, y: -8.567632}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -3068,57 +3074,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 382844816970477270, guid: 2d087a2cd10c24a46b49af11cbbe8ef9, type: 3}
   m_PrefabInstance: {fileID: 1196705554}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &513718599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 513718600}
-  - component: {fileID: 513718601}
-  m_Layer: 0
-  m_Name: bridge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &513718600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513718599}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 458603155}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!251 &513718601
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513718599}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &527145314
 GameObject:
   m_ObjectHideFlags: 0
@@ -13818,7 +13773,7 @@ Transform:
   m_GameObject: {fileID: 2029171378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.72, y: 8.64, z: -1}
+  m_LocalPosition: {x: 30.5, y: 9.2, z: -1}
   m_LocalScale: {x: 0.2625, y: 0.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13954,7 +13909,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4bea46471b95d7b49a6b02b6e06d51f9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e36ffa3088205dd4eb9a40578c256f61, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.387
   m_Pitch: 1

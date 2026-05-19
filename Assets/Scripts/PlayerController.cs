@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
     private string currentAnim;
+    
 
     public bool collectibleNearby = false;
     public bool dialogueShowing;
@@ -76,30 +77,36 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = (moveVector * speed);
 
-        
-
-        if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
+        //only change animation if the player is moving
+        if (moveVector != Vector2.zero)
         {
-            ChangeAnim("walk_hor");
+            //horizontal movement
+            if (Mathf.Abs(horizontalInput) > Mathf.Abs(verticalInput))
+            {
+                ChangeAnim("walk_hor");
 
-            if (horizontalInput > 0)
-            {
-                sr.flipX = false;
-                
-            } else if (horizontalInput < 0)
-            {
-                sr.flipX = true;
-                
+                if (horizontalInput > 0)
+                {
+                    sr.flipX = false;
+                }
+                else if (horizontalInput < 0)
+                {
+                    sr.flipX = true;   
+                }
             }
-        }else
-        {
-            if (verticalInput > 0)
-            {
-                ChangeAnim("walk_vert_up");
-            }
+            //vertical movement
             else
             {
-                ChangeAnim("walk_vert");
+                if (verticalInput > 0)
+                {
+                    ChangeAnim("walk_vert_up");
+                    
+                }
+                else if (verticalInput < 0)
+                {
+                    ChangeAnim("walk_vert");
+                    
+                }
             }
         }
 

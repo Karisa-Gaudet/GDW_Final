@@ -78,7 +78,7 @@ public class CameraScript : MonoBehaviour
         {
             transform.position = new Vector3(player.transform.position.x, player.transform.position.y, zPos);
 
-            if (transform.position.x < -58.4f)
+            if (transform.position.x < -59.8f)
             {
                 transform.position = new Vector3(-58.4f, transform.position.y, zPos);
             }
