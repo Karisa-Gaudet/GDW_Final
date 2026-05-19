@@ -80,19 +80,19 @@ public class CameraScript : MonoBehaviour
 
             if (transform.position.x < -59.8f)
             {
-                transform.position = new Vector3(-58.4f, transform.position.y, zPos);
+                transform.position = new Vector3(-59.8f, transform.position.y, zPos);
             }
-            if (transform.position.x > -52.8f)
+            if (transform.position.x > -52.0f)
             {
-                transform.position = new Vector3(-52.8f, transform.position.y, zPos);
+                transform.position = new Vector3(-52.0f, transform.position.y, zPos);
             }
             if (transform.position.y < 6.7f)
             {
                 transform.position = new Vector3(transform.position.x, 6.7f, zPos);
             }
-            if (transform.position.y > 31.1f)
+            if (transform.position.y > 31.9f)
             {
-                transform.position = new Vector3(transform.position.x, 31.1f, zPos);
+                transform.position = new Vector3(transform.position.x, 31.9f, zPos);
             }
         }
 
